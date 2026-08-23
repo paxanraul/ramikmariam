@@ -274,7 +274,10 @@ a:focus-visible {
   background: linear-gradient(90deg, rgba(169, 130, 56, .58), transparent);
 }
 
-main { overflow: hidden; }
+main {
+  overflow: hidden;
+  background: var(--white);
+}
 
 section {
   position: relative;
@@ -335,7 +338,12 @@ h2 {
   font-size: .6rem;
 }
 
-.portrait-section { padding-bottom: 4.7rem; }
+.portrait-section {
+  padding-bottom: 4.7rem;
+  background:
+    radial-gradient(circle at 50% 100%, rgba(205, 232, 165, .1), transparent 38%),
+    var(--white);
+}
 
 .portrait-verse {
   max-width: 500px;
@@ -418,7 +426,9 @@ h2 {
 .message-section {
   padding-top: 5.7rem;
   border-top: 1px solid rgba(169, 130, 56, .18);
-  background: var(--white);
+  background:
+    radial-gradient(circle at 50% 0%, rgba(190, 225, 135, .12), transparent 38%),
+    linear-gradient(180deg, var(--white), var(--ivory));
 }
 
 .botanical-mark {
@@ -442,6 +452,10 @@ h2 {
   min-height: 550px;
   display: grid;
   align-content: center;
+  border-top: 1px solid rgba(169, 130, 56, .12);
+  background:
+    radial-gradient(circle at 50% 0%, rgba(190, 225, 135, .2), transparent 42%),
+    linear-gradient(180deg, #fff 0%, var(--white) 58%, rgba(205, 232, 165, .13) 100%);
 }
 
 .editorial-date {
@@ -449,7 +463,7 @@ h2 {
   display: grid;
   justify-items: center;
   gap: .95rem;
-  margin-top: 1.8rem;
+  margin: 0;
   color: var(--gold);
 }
 
@@ -460,7 +474,7 @@ h2 {
 }
 
 .editorial-date .date-month {
-  color: var(--ink);
+  color: var(--leaf-dark);
   font-size: clamp(2rem, 9vw, 3.35rem);
   font-style: italic;
   line-height: 1.05;
@@ -468,47 +482,71 @@ h2 {
 
 .editorial-date .date-year {
   margin-top: .2rem;
+  padding-left: .45em;
+  color: var(--gold-dark);
   font: 300 1rem/1.2 var(--sans);
-  letter-spacing: .5em;
+  letter-spacing: .45em;
 }
 
-.date-rule {
-  width: 1px;
-  height: 48px;
-  margin: .65rem 0;
-  background: linear-gradient(var(--gold), transparent);
+.gold-wave {
+  width: min(72%, 280px);
+  margin-inline: auto;
+  color: var(--gold);
 }
 
-.date-rule:first-child { transform: rotate(180deg); }
+.gold-wave svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.gold-wave path {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.15;
+  stroke-linecap: round;
+  opacity: .72;
+}
+
+.gold-wave path:nth-child(2) { opacity: .48; }
+.gold-wave path:nth-child(3) { opacity: .28; }
+
+.gold-wave-date { margin-top: 3.2rem; }
 
 .countdown-section {
+  min-height: 360px;
+  display: grid;
+  align-content: center;
+  padding-top: 5.4rem;
+  padding-bottom: 5.4rem;
   border-top: 1px solid rgba(169, 130, 56, .14);
-  background: var(--white);
+  background:
+    radial-gradient(circle at 50% 100%, rgba(190, 225, 135, .15), transparent 46%),
+    linear-gradient(180deg, var(--white), #fff 62%, var(--ivory));
 }
-
-.countdown-section h2 { font-size: clamp(2rem, 9vw, 3rem); }
 
 .countdown {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   max-width: 530px;
-  margin: 3rem auto 0;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .countdown div {
   position: relative;
   min-width: 0;
-  margin: 0 .18rem;
-  padding: 1rem .18rem .9rem;
-  border: 1px solid rgba(200, 164, 93, .52);
-  background: rgba(255, 253, 248, .78);
+  padding: 1.15rem .35rem 1rem;
 }
 
-.countdown div + div::before { display: none; }
+.countdown div + div {
+  border-left: 1px solid rgba(200, 164, 93, .5);
+}
 
 .countdown strong {
   display: block;
-  color: var(--gold-dark);
+  color: var(--leaf-dark);
   font-size: clamp(2rem, 10vw, 3.8rem);
   font-weight: 400;
   font-variant-numeric: tabular-nums;
@@ -518,6 +556,7 @@ h2 {
 .countdown span {
   display: block;
   margin-top: .35rem;
+  color: var(--gold-dark);
   font-family: var(--sans);
   font-size: clamp(.46rem, 1.8vw, .65rem);
   letter-spacing: .08em;
@@ -535,6 +574,9 @@ h2 {
   padding-top: 7rem;
   padding-bottom: 7.5rem;
   border-top: 1px solid rgba(169, 130, 56, .14);
+  background:
+    radial-gradient(circle at 50% 48%, rgba(190, 225, 135, .14), transparent 36%),
+    linear-gradient(180deg, #fff 0%, var(--white) 52%, var(--ivory) 100%);
 }
 
 .details-section article {
@@ -564,16 +606,15 @@ h2 {
   line-height: .85;
 }
 
-.details-divider {
-  display: block;
-  width: 1px;
-  height: 95px;
-  margin: 4.5rem auto;
-  background: linear-gradient(transparent, var(--gold), transparent);
+.gold-wave-details {
+  width: min(58%, 220px);
+  margin-top: 4.7rem;
+  margin-bottom: 4.7rem;
 }
 
 .venue-block h2 {
-  margin-top: 1.5rem;
+  margin-top: .5rem;
+  color: var(--leaf-dark);
   font-size: clamp(2.3rem, 10vw, 3.8rem);
 }
 
@@ -592,47 +633,44 @@ h2 {
   justify-content: center;
   margin-top: 2.5rem;
   padding: .95rem 2rem;
-  border: 1px solid var(--gold-dark);
-  background: var(--gold-dark);
-  color: var(--white);
+  border: 1px solid var(--gold);
+  background: rgba(205, 232, 165, .22);
+  color: var(--leaf-dark);
   font: 400 .66rem/1 var(--sans);
   letter-spacing: .17em;
   text-decoration: none;
   text-transform: uppercase;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .14);
+  box-shadow: none;
   transition: color .3s, background .3s, transform .3s, box-shadow .3s;
 }
 
 .location-button:hover {
   transform: translateY(-2px);
-  background: var(--white);
-  color: var(--gold-dark);
-  box-shadow: 0 8px 28px rgba(200, 164, 93, .25);
+  background: rgba(205, 232, 165, .38);
+  color: var(--leaf-dark);
+  box-shadow: 0 8px 22px rgba(200, 164, 93, .16);
 }
 
 .closing-section {
-  min-height: 710px;
+  min-height: 520px;
   display: grid;
   place-items: center;
   padding-inline: 2rem;
   border-top: 1px solid rgba(169, 130, 56, .14);
-  background: var(--white);
+  background:
+    radial-gradient(circle at 50% 0%, rgba(190, 225, 135, .13), transparent 42%),
+    var(--white);
 }
 
 .closing-arch {
   width: min(100%, 440px);
-  padding: 5.6rem 1rem 4.5rem;
+  padding: 4.5rem 1rem 4rem;
   border: 1px solid rgba(168, 136, 78, .55);
   border-radius: 50% 50% 2px 2px / 27% 27% 2px 2px;
 }
 
-.closing-section h2 {
-  color: var(--ink);
-  font-size: clamp(2.8rem, 12vw, 4.7rem);
-}
-
 .closing-monogram {
-  margin-top: 3.2rem;
+  margin-top: 0;
   color: var(--gold-dark);
   font-family: var(--script);
   font-size: 3.1rem;
@@ -681,9 +719,12 @@ h2 {
 @media (max-width: 420px) {
   .countdown {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: .65rem;
+    gap: 0;
   }
-  .countdown div { margin: 0; }
+  .countdown div:nth-child(3) { border-left: 0; }
+  .countdown div:nth-child(n + 3) {
+    border-top: 1px solid rgba(200, 164, 93, .34);
+  }
   .countdown span { font-size: .58rem; }
 }
 

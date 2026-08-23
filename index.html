@@ -65,27 +65,29 @@
         </section>
 
         <section class="date-section section-dark reveal" aria-labelledby="date-title">
-          <p class="kicker">Сохраните дату</p>
           <h2 class="visually-hidden" id="date-title">Дата свадьбы</h2>
           <div class="editorial-date">
-            <span class="date-rule"></span>
             <strong>09</strong>
             <span class="date-month">сентября</span>
             <strong class="date-year">2026</strong>
-            <span class="date-rule"></span>
+          </div>
+          <div class="gold-wave gold-wave-date" aria-hidden="true">
+            <svg viewBox="0 0 260 36" role="presentation">
+              <path d="M4 13c24-10 44-10 68 0s44 10 68 0 44-10 68 0 32 10 48 2"/>
+              <path d="M4 20c24-10 44-10 68 0s44 10 68 0 44-10 68 0 32 10 48 2"/>
+              <path d="M4 27c24-10 44-10 68 0s44 10 68 0 44-10 68 0 32 10 48 2"/>
+            </svg>
           </div>
         </section>
 
-        <section class="countdown-section section-light reveal" aria-labelledby="countdown-title">
-          <p class="kicker">До нашей встречи</p>
-          <h2 id="countdown-title">Осталось совсем немного</h2>
+        <section class="countdown-section section-light reveal" aria-label="Обратный отсчёт">
           <div class="countdown" id="countdown" role="timer" aria-live="off">
             <div><strong id="days">00</strong><span id="daysLabel">Дней</span></div>
             <div><strong id="hours">00</strong><span id="hoursLabel">Часов</span></div>
             <div><strong id="minutes">00</strong><span id="minutesLabel">Минут</span></div>
             <div><strong id="seconds">00</strong><span id="secondsLabel">Секунд</span></div>
           </div>
-          <p class="countdown-finished" id="countdownFinished" hidden>Этот день настал!</p>
+          <p class="countdown-finished" id="countdownFinished" hidden>09.09.2026</p>
         </section>
 
         <section class="details-section section-dark reveal" aria-label="Время и место проведения">
@@ -97,13 +99,17 @@
             <p class="arrival-time">17:00</p>
           </article>
 
-          <span class="details-divider" aria-hidden="true"></span>
+          <div class="gold-wave gold-wave-details" aria-hidden="true">
+            <svg viewBox="0 0 220 42" role="presentation">
+              <path d="M4 21c28-15 52-15 80 0s52 15 80 0 38-12 52-4"/>
+              <path d="M4 28c28-15 52-15 80 0s52 15 80 0 38-12 52-4"/>
+            </svg>
+          </div>
 
           <article class="venue-block">
             <div class="line-icon" aria-hidden="true">
               <svg viewBox="0 0 48 48" role="presentation"><path d="M38 20c0 10-14 23-14 23S10 30 10 20a14 14 0 1 1 28 0Z"/><circle cx="24" cy="20" r="4"/></svg>
             </div>
-            <p class="kicker">Место торжества</p>
             <h2>Банкетный зал<br>«Наполеон»</h2>
             <address>ул. Гарибальди, 1а</address>
             <a class="location-button" href="https://yandex.ru/maps/?text=%D1%83%D0%BB.%20%D0%93%D0%B0%D1%80%D0%B8%D0%B1%D0%B0%D0%BB%D1%8C%D0%B4%D0%B8%2C%201%D0%B0" target="_blank" rel="noopener noreferrer">
@@ -112,10 +118,8 @@
           </article>
         </section>
 
-        <section class="closing-section section-light reveal" aria-labelledby="closing-title">
+        <section class="closing-section section-light reveal" aria-label="Ramik и Mariam">
           <div class="closing-arch">
-            <p class="kicker">До встречи</p>
-            <h2 id="closing-title">Будем счастливы<br>видеть вас!</h2>
             <div class="closing-monogram" aria-hidden="true">R <span>&amp;</span> M</div>
             <p class="closing-date">09 · 09 · 2026</p>
           </div>

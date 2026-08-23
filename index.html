@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#A8D96F" />
+    <meta name="theme-color" content="#F5F9EB" />
     <meta name="description" content="Свадебное приглашение Ramik & Mariam — 09.09.2026" />
     <title>Ramik & Mariam — 09.09.2026</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -43,45 +43,131 @@
       </header>
 
       <main id="invitation" aria-hidden="true">
-        <section class="portrait-section section-light reveal" aria-labelledby="portrait-title">
-          <div class="section-ornament" aria-hidden="true"><span></span><i>✦</i><span></span></div>
-          <h2 class="portrait-verse" id="portrait-title">«И установил между вами любовь и милосердие»</h2>
-          <p class="verse-reference">Коран, [30:21]</p>
-          <figure class="portrait-frame">
-            <div class="portrait-arch">
-              <img src="/assets/ramik-mariam-portrait.jpg" alt="Ramik и Mariam" width="1282" height="1600" fetchpriority="high" />
+        <section class="portrait-section reveal" aria-labelledby="portrait-title">
+          <div class="quote-block">
+            <h2 class="portrait-verse reveal-item" id="portrait-title" style="--reveal-order: 0">«И установил между вами любовь и милосердие»</h2>
+            <p class="verse-reference" data-stagger>Коран, [30:21]</p>
+          </div>
+
+          <figure class="portrait-frame reveal-item" style="--reveal-order: 2">
+            <div class="portrait-paper">
+              <div class="portrait-arch">
+                <div class="portrait-media">
+                  <img src="/assets/ramik-mariam-portrait.jpg" alt="Ramik и Mariam" width="1282" height="1600" fetchpriority="high" />
+                </div>
+              </div>
             </div>
-            <span class="portrait-flower flower-left" aria-hidden="true">❀</span>
-            <span class="portrait-flower flower-right" aria-hidden="true">❀</span>
           </figure>
+
+          <svg class="editorial-wave wave-after-photo" viewBox="0 0 620 120" preserveAspectRatio="none" aria-hidden="true">
+            <path class="wave-fine" d="M-80 62C58 16 150 104 292 62S514 22 700 72"/>
+            <path d="M-80 78C58 32 150 120 292 78S514 38 700 88"/>
+            <path class="wave-soft" d="M-80 94C58 48 150 136 292 94S514 54 700 104"/>
+          </svg>
         </section>
 
-        <section class="message-section section-light reveal" aria-labelledby="message-title">
-          <div class="botanical-mark" aria-hidden="true">❦</div>
-          <h2 id="message-title">Дорогие родные и близкие!</h2>
-          <p>Мы будем счастливы разделить с вами один из самых важных и счастливых дней нашей жизни.</p>
-          <p>С большой радостью приглашаем вас на нашу свадьбу.</p>
-          <div class="section-ornament" aria-hidden="true"><span></span><i>✦</i><span></span></div>
-        </section>
-
-        <section class="date-section section-dark reveal" aria-labelledby="date-title">
-          <h2 class="visually-hidden" id="date-title">Дата свадьбы</h2>
-          <div class="editorial-date">
-            <strong>09</strong>
-            <span class="date-month">сентября</span>
-            <strong class="date-year">2026</strong>
+        <section class="message-section reveal" aria-labelledby="message-title">
+          <span class="section-rule reveal-item" style="--reveal-order: 0" aria-hidden="true"></span>
+          <h2 class="message-title" id="message-title">
+            <span style="--word-order: 0">Дорогие</span>
+            <span style="--word-order: 1">родные</span>
+            <span style="--word-order: 2">и близкие!</span>
+          </h2>
+          <div class="invitation-copy reveal-item" style="--reveal-order: 4">
+            <p>Мы будем счастливы разделить с вами один из самых важных и счастливых дней нашей жизни.</p>
+            <p>С большой радостью приглашаем вас на нашу свадьбу.</p>
           </div>
-          <div class="gold-wave gold-wave-date" aria-hidden="true">
-            <svg viewBox="0 0 260 36" role="presentation">
-              <path d="M4 13c24-10 44-10 68 0s44 10 68 0 44-10 68 0 32 10 48 2"/>
-              <path d="M4 20c24-10 44-10 68 0s44 10 68 0 44-10 68 0 32 10 48 2"/>
-              <path d="M4 27c24-10 44-10 68 0s44 10 68 0 44-10 68 0 32 10 48 2"/>
+        </section>
+
+        <section class="calendar-section reveal" aria-labelledby="calendar-title">
+          <svg class="editorial-wave wave-calendar-top" viewBox="0 0 620 120" preserveAspectRatio="none" aria-hidden="true">
+            <path class="wave-soft" d="M-90 64C72 4 160 112 316 60S540 18 710 72"/>
+            <path d="M-90 82C72 22 160 130 316 78S540 36 710 90"/>
+          </svg>
+
+          <p class="section-label" data-stagger>Дата свадьбы</p>
+          <div class="calendar-paper reveal-item" style="--reveal-order: 2">
+            <header class="calendar-heading">
+              <h2 id="calendar-title">Сентябрь</h2>
+              <p>2026</p>
+            </header>
+            <div class="calendar-weekdays" aria-hidden="true">
+              <span>Пн</span><span>Вт</span><span>Ср</span><span>Чт</span><span>Пт</span><span>Сб</span><span>Вс</span>
+            </div>
+            <div class="calendar-days" id="calendarDays" role="grid" aria-label="Календарь на сентябрь 2026 года"></div>
+            <footer class="calendar-footer">
+              <span aria-hidden="true"></span>
+              <time datetime="2026-09-09">09 · 09 · 2026</time>
+              <span aria-hidden="true"></span>
+            </footer>
+          </div>
+
+          <svg class="editorial-wave wave-calendar-bottom" viewBox="0 0 620 120" preserveAspectRatio="none" aria-hidden="true">
+            <path class="wave-fine" d="M-100 54C42 104 156 12 304 60S522 104 720 46"/>
+            <path d="M-100 72C42 122 156 30 304 78S522 122 720 64"/>
+          </svg>
+        </section>
+
+        <section class="clock-section reveal" aria-labelledby="clock-title">
+          <h2 class="section-label clock-title" id="clock-title" data-stagger>Сбор гостей</h2>
+          <div class="clock-composition reveal-item" style="--reveal-order: 2">
+            <svg class="analog-clock" viewBox="0 0 200 200" aria-hidden="true">
+              <circle class="clock-ring clock-ring-outer" cx="100" cy="100" r="88"/>
+              <circle class="clock-ring clock-ring-inner" cx="100" cy="100" r="82"/>
+              <g class="clock-ticks">
+                <line class="clock-tick clock-tick-major" x1="100" y1="14" x2="100" y2="25"/>
+                <line class="clock-tick" x1="100" y1="16" x2="100" y2="23" transform="rotate(30 100 100)"/>
+                <line class="clock-tick" x1="100" y1="16" x2="100" y2="23" transform="rotate(60 100 100)"/>
+                <line class="clock-tick clock-tick-major" x1="100" y1="14" x2="100" y2="25" transform="rotate(90 100 100)"/>
+                <line class="clock-tick" x1="100" y1="16" x2="100" y2="23" transform="rotate(120 100 100)"/>
+                <line class="clock-tick" x1="100" y1="16" x2="100" y2="23" transform="rotate(150 100 100)"/>
+                <line class="clock-tick clock-tick-major" x1="100" y1="14" x2="100" y2="25" transform="rotate(180 100 100)"/>
+                <line class="clock-tick" x1="100" y1="16" x2="100" y2="23" transform="rotate(210 100 100)"/>
+                <line class="clock-tick" x1="100" y1="16" x2="100" y2="23" transform="rotate(240 100 100)"/>
+                <line class="clock-tick clock-tick-major" x1="100" y1="14" x2="100" y2="25" transform="rotate(270 100 100)"/>
+                <line class="clock-tick" x1="100" y1="16" x2="100" y2="23" transform="rotate(300 100 100)"/>
+                <line class="clock-tick" x1="100" y1="16" x2="100" y2="23" transform="rotate(330 100 100)"/>
+              </g>
+              <g class="clock-numerals">
+                <text x="100" y="39">XII</text>
+                <text x="163" y="104">III</text>
+                <text x="100" y="169">VI</text>
+                <text x="36" y="104">IX</text>
+              </g>
+              <line class="clock-hand clock-hour" x1="100" y1="105" x2="100" y2="56"/>
+              <line class="clock-hand clock-minute" x1="100" y1="107" x2="100" y2="38"/>
+              <circle class="clock-pin" cx="100" cy="100" r="4"/>
             </svg>
+            <p class="clock-time">17<span>:</span>00</p>
+          </div>
+
+          <svg class="editorial-wave wave-between-time-location" viewBox="0 0 620 120" preserveAspectRatio="none" aria-hidden="true">
+            <path class="wave-soft" d="M-100 52C46 8 170 112 312 62S528 12 720 70"/>
+            <path d="M-100 70C46 26 170 130 312 80S528 30 720 88"/>
+            <path class="wave-fine" d="M-100 88C46 44 170 148 312 98S528 48 720 106"/>
+          </svg>
+        </section>
+
+        <section class="location-section reveal" aria-labelledby="location-title">
+          <div class="location-paper reveal-item" style="--reveal-order: 0">
+            <h2 class="location-title" id="location-title">Локация</h2>
+            <p class="section-label" data-stagger>Банкетный зал</p>
+            <p class="venue-name">«Наполеон»</p>
+            <span class="location-divider" aria-hidden="true"></span>
+            <address>ул. Гарибальди, 1а</address>
+            <a class="location-button" href="https://yandex.ru/maps/?text=%D1%83%D0%BB.%20%D0%93%D0%B0%D1%80%D0%B8%D0%B1%D0%B0%D0%BB%D1%8C%D0%B4%D0%B8%2C%201%D0%B0" target="_blank" rel="noopener noreferrer">
+              <span>Открыть локацию</span>
+              <span class="button-arrow" aria-hidden="true">→</span>
+            </a>
           </div>
         </section>
 
-        <section class="countdown-section section-light reveal" aria-label="Обратный отсчёт">
-          <div class="countdown" id="countdown" role="timer" aria-live="off">
+        <section class="countdown-section reveal" aria-labelledby="countdown-title">
+          <h2 class="countdown-title" id="countdown-title">
+            <span>До нашей свадьбы</span>
+            <em>осталось</em>
+          </h2>
+          <div class="countdown reveal-item" id="countdown" role="timer" aria-live="off" style="--reveal-order: 2">
             <div><strong id="days">00</strong><span id="daysLabel">Дней</span></div>
             <div><strong id="hours">00</strong><span id="hoursLabel">Часов</span></div>
             <div><strong id="minutes">00</strong><span id="minutesLabel">Минут</span></div>
@@ -90,38 +176,16 @@
           <p class="countdown-finished" id="countdownFinished" hidden>09.09.2026</p>
         </section>
 
-        <section class="details-section section-dark reveal" aria-label="Время и место проведения">
-          <article class="time-block">
-            <div class="line-icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48" role="presentation"><circle cx="24" cy="24" r="18"/><path d="M24 13v12l8 5"/></svg>
-            </div>
-            <p class="kicker">Сбор гостей</p>
-            <p class="arrival-time">17:00</p>
-          </article>
-
-          <div class="gold-wave gold-wave-details" aria-hidden="true">
-            <svg viewBox="0 0 220 42" role="presentation">
-              <path d="M4 21c28-15 52-15 80 0s52 15 80 0 38-12 52-4"/>
-              <path d="M4 28c28-15 52-15 80 0s52 15 80 0 38-12 52-4"/>
-            </svg>
-          </div>
-
-          <article class="venue-block">
-            <div class="line-icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48" role="presentation"><path d="M38 20c0 10-14 23-14 23S10 30 10 20a14 14 0 1 1 28 0Z"/><circle cx="24" cy="20" r="4"/></svg>
-            </div>
-            <h2>Банкетный зал<br>«Наполеон»</h2>
-            <address>ул. Гарибальди, 1а</address>
-            <a class="location-button" href="https://yandex.ru/maps/?text=%D1%83%D0%BB.%20%D0%93%D0%B0%D1%80%D0%B8%D0%B1%D0%B0%D0%BB%D1%8C%D0%B4%D0%B8%2C%201%D0%B0" target="_blank" rel="noopener noreferrer">
-              Открыть локацию
-            </a>
-          </article>
-        </section>
-
-        <section class="closing-section section-light reveal" aria-label="Ramik и Mariam">
-          <div class="closing-arch">
-            <div class="closing-monogram" aria-hidden="true">R <span>&amp;</span> M</div>
-            <p class="closing-date">09 · 09 · 2026</p>
+        <section class="closing-section reveal" aria-labelledby="closing-title">
+          <svg class="editorial-wave wave-before-closing" viewBox="0 0 620 120" preserveAspectRatio="none" aria-hidden="true">
+            <path class="wave-fine" d="M-100 58C52 110 154 12 310 62S530 106 720 48"/>
+            <path d="M-100 76C52 128 154 30 310 80S530 124 720 66"/>
+          </svg>
+          <div class="closing-content">
+            <p class="closing-script reveal-item" style="--reveal-order: 1">С любовью</p>
+            <h2 class="closing-names reveal-item" id="closing-title" style="--reveal-order: 2">Ramik &amp; Mariam</h2>
+            <span class="closing-rule reveal-item" style="--reveal-order: 3" aria-hidden="true"></span>
+            <p class="closing-date reveal-item" style="--reveal-order: 4">09 · 09 · 2026</p>
           </div>
         </section>
       </main>

@@ -17,10 +17,10 @@
   --content-ivory: #faf7ee;
   --content-lime: #dcefb8;
   --content-pistachio: #cbea96;
-  --content-ink: #667d4b;
-  --content-heading: #3f4d35;
-  --content-gold: #c2a063;
-  --content-gold-deep: #9a7c4f;
+  --content-ink: #4b6036;
+  --content-heading: #354b2f;
+  --content-gold: #d5ad48;
+  --content-gold-deep: #56683a;
   --display: 'Cormorant Garamond', Georgia, serif;
   --script: 'Great Vibes', 'Segoe Script', cursive;
   --sans: 'Montserrat', Arial, sans-serif;
@@ -291,20 +291,35 @@ main {
   overflow: hidden;
   color: var(--content-ink);
   background:
-    radial-gradient(ellipse at 8% 12%, rgba(202, 235, 151, .16), transparent 38%),
-    radial-gradient(ellipse at 92% 28%, rgba(219, 241, 184, .15), transparent 37%),
-    radial-gradient(ellipse at 12% 48%, rgba(185, 226, 117, .14), transparent 40%),
-    radial-gradient(ellipse at 88% 66%, rgba(202, 235, 151, .17), transparent 39%),
-    radial-gradient(ellipse at 18% 86%, rgba(219, 241, 184, .15), transparent 41%),
-    linear-gradient(
-      180deg,
-      var(--content-warm) 0%,
-      #f8fcef 18%,
-      #f2f9e5 38%,
-      #f7fbee 58%,
-      #eff8df 78%,
-      var(--content-warm) 100%
-    );
+    radial-gradient(72% 6% at 92% 19%, rgba(231, 197, 111, .56) 0%, rgba(242, 223, 167, .28) 54%, transparent 86%),
+    radial-gradient(70% 5% at 7% 32%, rgba(231, 197, 111, .52) 0%, rgba(242, 223, 167, .26) 54%, transparent 86%),
+    radial-gradient(74% 6% at 93% 48%, rgba(231, 197, 111, .54) 0%, rgba(242, 223, 167, .28) 54%, transparent 86%),
+    radial-gradient(72% 6% at 6% 64%, rgba(231, 197, 111, .52) 0%, rgba(242, 223, 167, .26) 54%, transparent 86%),
+    radial-gradient(72% 6% at 94% 79%, rgba(231, 197, 111, .56) 0%, rgba(242, 223, 167, .28) 54%, transparent 86%),
+    radial-gradient(70% 5% at 7% 90%, rgba(231, 197, 111, .52) 0%, rgba(242, 223, 167, .26) 54%, transparent 86%),
+    radial-gradient(84% 8% at 88% 101%, rgba(231, 197, 111, .7) 0%, rgba(242, 223, 167, .38) 54%, transparent 88%),
+    radial-gradient(110% 10% at 39% 11%, rgba(255, 253, 247, .9) 0%, rgba(250, 245, 232, .58) 48%, transparent 100%),
+    radial-gradient(106% 7% at 64% 27%, rgba(255, 253, 247, .88) 0%, rgba(250, 245, 232, .55) 48%, transparent 100%),
+    radial-gradient(112% 8% at 35% 41%, rgba(255, 253, 247, .9) 0%, rgba(250, 245, 232, .58) 48%, transparent 100%),
+    radial-gradient(108% 8% at 65% 57%, rgba(255, 253, 247, .9) 0%, rgba(250, 245, 232, .56) 48%, transparent 100%),
+    radial-gradient(112% 8% at 37% 72%, rgba(255, 253, 247, .9) 0%, rgba(250, 245, 232, .56) 48%, transparent 100%),
+    radial-gradient(106% 6% at 64% 85%, rgba(255, 253, 247, .88) 0%, rgba(250, 245, 232, .54) 48%, transparent 100%),
+    radial-gradient(102% 6% at 41% 96%, rgba(255, 253, 247, .86) 0%, rgba(250, 245, 232, .52) 48%, transparent 100%),
+    radial-gradient(108% 12% at 62% 0%, rgba(203, 239, 122, .84) 0%, rgba(221, 244, 166, .6) 42%, rgba(234, 244, 201, .18) 72%, transparent 100%),
+    radial-gradient(114% 9% at 28% 20%, rgba(203, 239, 122, .74) 0%, rgba(221, 244, 166, .56) 42%, rgba(234, 244, 201, .16) 72%, transparent 100%),
+    radial-gradient(112% 10% at 73% 33%, rgba(203, 239, 122, .76) 0%, rgba(221, 244, 166, .56) 42%, rgba(234, 244, 201, .16) 72%, transparent 100%),
+    radial-gradient(114% 10% at 24% 49%, rgba(203, 239, 122, .74) 0%, rgba(221, 244, 166, .56) 42%, rgba(234, 244, 201, .16) 72%, transparent 100%),
+    radial-gradient(114% 10% at 68% 65%, rgba(203, 239, 122, .74) 0%, rgba(221, 244, 166, .55) 42%, rgba(234, 244, 201, .16) 72%, transparent 100%),
+    radial-gradient(112% 8% at 31% 80%, rgba(203, 239, 122, .72) 0%, rgba(221, 244, 166, .54) 42%, rgba(234, 244, 201, .15) 72%, transparent 100%),
+    radial-gradient(108% 7% at 64% 91%, rgba(203, 239, 122, .68) 0%, rgba(221, 244, 166, .5) 42%, rgba(234, 244, 201, .14) 72%, transparent 100%),
+    radial-gradient(94% 10% at 86% 20%, rgba(242, 223, 167, .7) 0%, rgba(231, 197, 111, .42) 52%, transparent 100%),
+    radial-gradient(92% 7% at 12% 33%, rgba(242, 223, 167, .68) 0%, rgba(231, 197, 111, .4) 52%, transparent 100%),
+    radial-gradient(98% 8% at 86% 49%, rgba(242, 223, 167, .7) 0%, rgba(231, 197, 111, .42) 52%, transparent 100%),
+    radial-gradient(94% 8% at 10% 65%, rgba(242, 223, 167, .68) 0%, rgba(231, 197, 111, .4) 52%, transparent 100%),
+    radial-gradient(94% 8% at 88% 80%, rgba(242, 223, 167, .7) 0%, rgba(231, 197, 111, .42) 52%, transparent 100%),
+    radial-gradient(90% 6% at 12% 91%, rgba(242, 223, 167, .66) 0%, rgba(231, 197, 111, .38) 52%, transparent 100%),
+    radial-gradient(104% 9% at 80% 100%, rgba(242, 223, 167, .82) 0%, rgba(231, 197, 111, .5) 52%, transparent 100%),
+    #faf5e8;
 }
 
 main::before,
@@ -319,16 +334,19 @@ main::after {
 main::before {
   inset: -2% -12%;
   background:
-    radial-gradient(ellipse 15% 80% at 0% 44%, rgba(255, 255, 255, .48), transparent 78%),
-    radial-gradient(ellipse 14% 76% at 100% 59%, rgba(251, 255, 244, .42), transparent 78%);
-  filter: blur(26px);
+    radial-gradient(ellipse 18% 88% at 0% 44%, rgba(255, 253, 247, .46), transparent 78%),
+    radial-gradient(ellipse 17% 84% at 100% 59%, rgba(255, 253, 247, .4), transparent 78%);
+  filter: blur(34px);
 }
 
 main::after {
-  background-image: radial-gradient(rgba(63, 77, 53, .12) .45px, transparent .55px);
-  background-size: 4px 4px;
-  opacity: .11;
-  mix-blend-mode: multiply;
+  background-image:
+    radial-gradient(rgba(68, 84, 48, .12) .42px, transparent .58px),
+    radial-gradient(rgba(255, 255, 255, .72) .38px, transparent .52px);
+  background-position: 0 0, 1px 1px;
+  background-size: 4px 4px, 5px 5px;
+  opacity: .12;
+  mix-blend-mode: soft-light;
 }
 
 main > section {
@@ -429,25 +447,38 @@ main h2 {
 
 .editorial-wave path {
   fill: none;
-  stroke: var(--content-gold);
+  stroke: #d5ad48;
   stroke-width: 1.2;
   stroke-linecap: round;
-  opacity: .42;
+  opacity: .58;
   vector-effect: non-scaling-stroke;
 }
 
-.editorial-wave .wave-fine { opacity: .27; }
+.editorial-wave .wave-fine { opacity: .36; }
 .editorial-wave .wave-soft {
   stroke-width: .9;
-  opacity: .19;
+  opacity: .25;
 }
+
+.clock-section .editorial-wave path {
+  stroke: #f1dda3;
+  opacity: .44;
+}
+
+.clock-section .editorial-wave .wave-fine { opacity: .25; }
+.clock-section .editorial-wave .wave-soft { opacity: .17; }
+
+.closing-section .editorial-wave path {
+  stroke: #f6e6b8;
+  opacity: .42;
+}
+
+.closing-section .editorial-wave .wave-fine { opacity: .22; }
+.closing-section .editorial-wave .wave-soft { opacity: .14; }
 
 .portrait-section {
   padding-top: 7.8rem;
   padding-bottom: 10.5rem;
-  background:
-    radial-gradient(ellipse at 14% 73%, rgba(185, 226, 117, .16), transparent 47%),
-    radial-gradient(ellipse at 88% 16%, rgba(219, 241, 184, .14), transparent 43%);
 }
 
 .portrait-verse {
@@ -473,9 +504,9 @@ main h2 {
 .portrait-paper {
   position: relative;
   padding: 10px;
-  border: 1px solid rgba(194, 160, 99, .36);
-  background: rgba(255, 252, 244, .64);
-  box-shadow: 0 24px 58px rgba(83, 72, 48, .12);
+  border: 1px solid rgba(255, 255, 255, .4);
+  background: rgba(255, 253, 248, .5);
+  box-shadow: 0 24px 58px rgba(84, 103, 57, .12);
   backdrop-filter: blur(8px);
 }
 
@@ -483,7 +514,7 @@ main h2 {
   position: relative;
   aspect-ratio: 4 / 5;
   overflow: hidden;
-  border: 1px solid rgba(154, 124, 79, .72);
+  border: 1px solid rgba(213, 173, 72, .76);
   border-radius: 48% 48% 2px 2px / 28% 28% 2px 2px;
   clip-path: inset(0 46% 0 46% round 48% 48% 2px 2px);
   transition: clip-path 1.65s cubic-bezier(.22, 1, .36, 1) .18s;
@@ -505,7 +536,7 @@ main h2 {
   transform: skewX(-13deg);
 }
 
-.portrait-arch::after { box-shadow: inset 0 0 34px rgba(62, 54, 38, .1); }
+.portrait-arch::after { box-shadow: inset 0 0 34px rgba(53, 75, 47, .1); }
 
 .portrait-media {
   width: 100%;
@@ -556,7 +587,6 @@ main h2 {
 .message-section {
   padding-top: 8rem;
   padding-bottom: 9rem;
-  background: radial-gradient(ellipse at 50% 48%, rgba(202, 235, 151, .13), transparent 61%);
 }
 
 .message-title {
@@ -580,7 +610,6 @@ main h2 {
 .calendar-section {
   padding-top: 10rem;
   padding-bottom: 10rem;
-  background: radial-gradient(ellipse at 50% 48%, rgba(185, 226, 117, .16), transparent 57%);
 }
 
 .wave-calendar-top { top: 1.2rem; }
@@ -590,10 +619,10 @@ main h2 {
   width: min(100%, 505px);
   margin: 2rem auto 0;
   padding: 2.35rem 2rem 1.7rem;
-  border: 1px solid rgba(194, 160, 99, .34);
+  border: 1px solid rgba(255, 255, 255, .36);
   border-radius: 2px;
-  background: rgba(255, 252, 244, .68);
-  box-shadow: 0 22px 50px rgba(83, 72, 48, .12);
+  background: rgba(255, 253, 248, .5);
+  box-shadow: 0 22px 50px rgba(84, 103, 57, .12);
   backdrop-filter: blur(10px);
 }
 
@@ -619,7 +648,7 @@ main h2 {
 
 .calendar-weekdays {
   padding: 0 .1rem .85rem;
-  border-bottom: 1px solid rgba(194, 160, 99, .3);
+  border-bottom: 1px solid rgba(213, 173, 72, .34);
 }
 
 .calendar-weekdays span {
@@ -691,7 +720,7 @@ main h2 {
   margin-top: 1rem;
 }
 
-.calendar-footer span { height: 1px; background: rgba(194, 160, 99, .44); }
+.calendar-footer span { height: 1px; background: rgba(213, 173, 72, .46); }
 
 .calendar-footer time {
   color: var(--content-heading);
@@ -708,9 +737,6 @@ main h2 {
 .clock-section {
   padding-top: 8.5rem;
   padding-bottom: 10rem;
-  background:
-    radial-gradient(ellipse at 5% 47%, rgba(219, 241, 184, .14), transparent 42%),
-    radial-gradient(ellipse at 94% 63%, rgba(202, 235, 151, .13), transparent 43%);
 }
 
 .clock-composition { margin-top: 2.8rem; }
@@ -772,17 +798,16 @@ main h2 {
 .location-section {
   padding-top: 8.5rem;
   padding-bottom: 8.5rem;
-  background: radial-gradient(ellipse at 50% 50%, rgba(185, 226, 117, .16), transparent 58%);
 }
 
 .location-paper {
   width: min(100%, 500px);
   margin: 0 auto;
   padding: 4.5rem 2.1rem 2.2rem;
-  border: 1px solid rgba(194, 160, 99, .28);
+  border: 1px solid rgba(255, 255, 255, .36);
   border-radius: 2px;
-  background: rgba(255, 252, 244, .62);
-  box-shadow: 0 22px 52px rgba(83, 72, 48, .12);
+  background: rgba(255, 253, 248, .5);
+  box-shadow: 0 22px 52px rgba(84, 103, 57, .12);
   backdrop-filter: blur(10px);
 }
 
@@ -853,9 +878,6 @@ main h2 {
 .countdown-section {
   padding-top: 8rem;
   padding-bottom: 9rem;
-  background:
-    radial-gradient(ellipse at 10% 35%, rgba(202, 235, 151, .13), transparent 43%),
-    radial-gradient(ellipse at 90% 72%, rgba(219, 241, 184, .15), transparent 44%);
 }
 
 .countdown-title > span {
@@ -882,8 +904,8 @@ main h2 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
   margin: 3.1rem auto 0;
   padding: 1.4rem 0 1.25rem;
-  border-top: 1px solid rgba(194, 160, 99, .34);
-  border-bottom: 1px solid rgba(194, 160, 99, .34);
+  border-top: 1px solid rgba(213, 173, 72, .4);
+  border-bottom: 1px solid rgba(213, 173, 72, .4);
 }
 
 .countdown div {
@@ -891,7 +913,7 @@ main h2 {
   padding: .45rem .25rem;
 }
 
-.countdown div + div { border-left: 1px solid rgba(194, 160, 99, .27); }
+.countdown div + div { border-left: 1px solid rgba(213, 173, 72, .32); }
 
 .countdown strong {
   display: block;
@@ -908,7 +930,7 @@ main h2 {
 .countdown span {
   display: block;
   margin-top: .55rem;
-  color: var(--content-gold-deep);
+  color: #445632;
   font: 500 clamp(.44rem, 1.6vw, .58rem)/1 var(--sans);
   letter-spacing: .1em;
   text-transform: uppercase;
@@ -931,16 +953,14 @@ main h2 {
   place-items: center;
   padding-top: 8.5rem;
   padding-bottom: 6.5rem;
-  background:
-    radial-gradient(ellipse at 50% 6%, rgba(202, 235, 151, .13), transparent 55%),
-    linear-gradient(180deg, transparent 0%, rgba(255, 253, 248, .42) 68%, rgba(255, 253, 248, .78) 100%);
 }
 
 .wave-before-closing { top: .75rem; }
 
 .closing-script {
   margin: 0;
-  color: var(--content-gold);
+  color: #465a35;
+  text-shadow: 0 2px 18px rgba(255, 246, 219, .2);
   font-family: var(--script);
   font-size: clamp(3rem, 12vw, 4.4rem);
   line-height: 1;
@@ -956,7 +976,7 @@ main h2 {
 
 .closing-date {
   margin: 1.5rem 0 0;
-  color: var(--content-gold-deep);
+  color: #405032;
   font: 500 .64rem/1 var(--sans);
   letter-spacing: .34em;
 }
@@ -1018,7 +1038,7 @@ main h2 {
 @media (max-width: 340px) {
   .countdown { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .countdown div:nth-child(3) { border-left: 0; }
-  .countdown div:nth-child(n + 3) { border-top: 1px solid rgba(194, 160, 99, .24); }
+  .countdown div:nth-child(n + 3) { border-top: 1px solid rgba(213, 173, 72, .28); }
 }
 
 @media (prefers-reduced-motion: reduce) {

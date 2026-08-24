@@ -291,14 +291,18 @@ main {
   overflow: hidden;
   color: var(--content-ink);
   background:
-    radial-gradient(ellipse at 0% 30%, rgba(255, 255, 255, .65), transparent 42%),
-    radial-gradient(ellipse at 100% 64%, rgba(255, 255, 255, .58), transparent 40%),
+    radial-gradient(ellipse at 8% 12%, rgba(202, 235, 151, .16), transparent 38%),
+    radial-gradient(ellipse at 92% 28%, rgba(219, 241, 184, .15), transparent 37%),
+    radial-gradient(ellipse at 12% 48%, rgba(185, 226, 117, .14), transparent 40%),
+    radial-gradient(ellipse at 88% 66%, rgba(202, 235, 151, .17), transparent 39%),
+    radial-gradient(ellipse at 18% 86%, rgba(219, 241, 184, .15), transparent 41%),
     linear-gradient(
       180deg,
       var(--content-warm) 0%,
-      rgba(213, 239, 174, .18) 24%,
-      rgba(191, 230, 128, .25) 48%,
-      rgba(221, 242, 186, .2) 72%,
+      #f8fcef 18%,
+      #f2f9e5 38%,
+      #f7fbee 58%,
+      #eff8df 78%,
       var(--content-warm) 100%
     );
 }
@@ -315,8 +319,8 @@ main::after {
 main::before {
   inset: -2% -12%;
   background:
-    radial-gradient(ellipse 20% 74% at 4% 42%, rgba(255, 255, 255, .5), transparent 76%),
-    radial-gradient(ellipse 18% 70% at 96% 61%, rgba(251, 255, 244, .44), transparent 76%);
+    radial-gradient(ellipse 15% 80% at 0% 44%, rgba(255, 255, 255, .48), transparent 78%),
+    radial-gradient(ellipse 14% 76% at 100% 59%, rgba(251, 255, 244, .42), transparent 78%);
   filter: blur(26px);
 }
 
@@ -441,6 +445,9 @@ main h2 {
 .portrait-section {
   padding-top: 7.8rem;
   padding-bottom: 10.5rem;
+  background:
+    radial-gradient(ellipse at 14% 73%, rgba(185, 226, 117, .16), transparent 47%),
+    radial-gradient(ellipse at 88% 16%, rgba(219, 241, 184, .14), transparent 43%);
 }
 
 .portrait-verse {
@@ -549,6 +556,7 @@ main h2 {
 .message-section {
   padding-top: 8rem;
   padding-bottom: 9rem;
+  background: radial-gradient(ellipse at 50% 48%, rgba(202, 235, 151, .13), transparent 61%);
 }
 
 .message-title {
@@ -572,6 +580,7 @@ main h2 {
 .calendar-section {
   padding-top: 10rem;
   padding-bottom: 10rem;
+  background: radial-gradient(ellipse at 50% 48%, rgba(185, 226, 117, .16), transparent 57%);
 }
 
 .wave-calendar-top { top: 1.2rem; }
@@ -699,6 +708,9 @@ main h2 {
 .clock-section {
   padding-top: 8.5rem;
   padding-bottom: 10rem;
+  background:
+    radial-gradient(ellipse at 5% 47%, rgba(219, 241, 184, .14), transparent 42%),
+    radial-gradient(ellipse at 94% 63%, rgba(202, 235, 151, .13), transparent 43%);
 }
 
 .clock-composition { margin-top: 2.8rem; }
@@ -760,6 +772,7 @@ main h2 {
 .location-section {
   padding-top: 8.5rem;
   padding-bottom: 8.5rem;
+  background: radial-gradient(ellipse at 50% 50%, rgba(185, 226, 117, .16), transparent 58%);
 }
 
 .location-paper {
@@ -840,6 +853,9 @@ main h2 {
 .countdown-section {
   padding-top: 8rem;
   padding-bottom: 9rem;
+  background:
+    radial-gradient(ellipse at 10% 35%, rgba(202, 235, 151, .13), transparent 43%),
+    radial-gradient(ellipse at 90% 72%, rgba(219, 241, 184, .15), transparent 44%);
 }
 
 .countdown-title > span {
@@ -915,6 +931,9 @@ main h2 {
   place-items: center;
   padding-top: 8.5rem;
   padding-bottom: 6.5rem;
+  background:
+    radial-gradient(ellipse at 50% 6%, rgba(202, 235, 151, .13), transparent 55%),
+    linear-gradient(180deg, transparent 0%, rgba(255, 253, 248, .42) 68%, rgba(255, 253, 248, .78) 100%);
 }
 
 .wave-before-closing { top: .75rem; }

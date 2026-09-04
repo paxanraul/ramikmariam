@@ -144,12 +144,12 @@ function buildCalendar() {
     cell.style.setProperty('--day-order', String(day));
     cell.setAttribute('aria-label', `${day} сентября 2026`);
 
-    if (day === 9) {
+    if (day === 14) {
       cell.setAttribute('aria-current', 'date');
       cell.innerHTML = `
         <span class="calendar-day-wedding">
           <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18"/></svg>
-          <span>9</span>
+          <span>14</span>
         </span>
       `;
     } else {
@@ -182,7 +182,7 @@ function prepareCharacterStaggers() {
 buildCalendar();
 prepareCharacterStaggers();
 
-const target = new Date('2026-09-09T17:00:00+03:00').getTime();
+const target = new Date('2026-09-14T17:00:00+03:00').getTime();
 const units = [
   ['days', 86_400_000, ['День', 'Дня', 'Дней']],
   ['hours', 3_600_000, ['Час', 'Часа', 'Часов']],
